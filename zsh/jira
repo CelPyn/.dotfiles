@@ -1,0 +1,20 @@
+export JIRA_ISSUE="DIACATRTM-2741"
+
+jiraset() {
+    # Read input from stdin into the variable jira_issue
+    read -r jira_issue
+
+    # Apply the sed substitution
+    sed -i '' "s|^export JIRA_ISSUE=.*|export JIRA_ISSUE=\"$jira_issue\"|" ~/zsh/jira
+    
+    # Check if sed command succeeded
+    if [ $? -eq 0 ]; then
+        echo "JIRA_ISSUE set to $jira_issue"
+    else
+        echo "Error updating the file."
+    fi
+    
+    # Source the updated file
+    source ~/zsh/jira
+}
+
