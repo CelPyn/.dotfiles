@@ -1,1 +1,1 @@
-plugins=(git aws mvn docker docker-compose terraform kubectl)
+plugins=(git aws mvn podman tofu kubectl)

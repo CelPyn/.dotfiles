@@ -11,3 +11,4 @@ source ~/zsh/fzf
 source ~/zsh/path
 source ~/zsh/sdkman
 source ~/zsh/jira
+source ~/zsh/tfswitch
